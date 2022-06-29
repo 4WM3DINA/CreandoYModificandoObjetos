@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap v5.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/css.css">
+    <title>Creando y Modificando Objetos</title>
+</head>
+
+<body>
+    <!-- Tabla Informacion de Pacientes Atendidos -->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center my-3 text-decoration-underline ">Listado Pacientes RedSalud</h1>
+                <table class="tablainformativa">
+                </table>
+            </div>
+        </div>
+
+        <hr class="border border-success border-2 my-4">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <label for="nombrePaciente" class="fw-bold fs-4 text-decoration-underline">Ingrese el nombre del
+                            paciente que desee
+                            buscar:</label>
+                        <input type="text" class="form-control mt-3 border border-success" id="nombrePaciente">
+                        <div class="d-flex justify-content-around">
+                            <button type="submit" id="search" class="btn btn-success my-3 botondebusqueda">Buscar
+                                Paciente</button>
+                            <button type="submit" id="clean" class="btn btn-success my-3 botondelimpieza">Limpiar
+                                Busqueda</button>
+                        </div>
+                    </form>
+                    <h4 class="fs-3 fw-bold text-decoration-underline">Su resultado es:</h4>
+                    <table class="table tabladeresultado my-3 fw-bold fst-italic">
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap v5.1 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!-- Mi JS -->
+    <script src="assets/js/scripct.js"></script>
+</body>
+
+</html>
